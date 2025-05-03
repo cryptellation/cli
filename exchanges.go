@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/cryptellation/exchanges/api"
-	"github.com/cryptellation/go-client/client"
+	"github.com/cryptellation/go-clients/client"
 	"github.com/spf13/cobra"
 )
 
