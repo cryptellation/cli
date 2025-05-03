@@ -28,6 +28,7 @@ func main() {
 		"json", "j", false, "Set output to JSON format")
 
 	// Set commands
+	setCandlesticksCommands(rootCmd)
 	setExchangesCommands(rootCmd)
 	setServicesCommands(rootCmd)
 

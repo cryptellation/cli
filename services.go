@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cryptellation/go-client/client"
+	"github.com/cryptellation/go-clients/client"
 	"github.com/spf13/cobra"
 )
 
