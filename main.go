@@ -31,6 +31,7 @@ func main() {
 	setCandlesticksCommands(rootCmd)
 	setExchangesCommands(rootCmd)
 	setServicesCommands(rootCmd)
+	setTicksCommands(rootCmd)
 
 	// Execute command
 	if err := rootCmd.Execute(); err != nil {
