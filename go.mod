@@ -3,10 +3,12 @@ module github.com/cryptellation/cli
 go 1.23.8
 
 require (
-	github.com/cryptellation/candlesticks v1.0.0
+	github.com/cryptellation/candlesticks v1.0.1
 	github.com/cryptellation/exchanges v1.1.0
-	github.com/cryptellation/go-clients v1.3.2
+	github.com/cryptellation/go-clients v1.4.1
+	github.com/cryptellation/ticks v1.0.1
 	github.com/spf13/cobra v1.9.1
+	go.temporal.io/sdk v1.34.0
 )
 
 require (
@@ -27,7 +29,7 @@ require (
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 	go.temporal.io/api v1.49.0 // indirect
-	go.temporal.io/sdk v1.34.0 // indirect
+	go.uber.org/mock v0.5.1 // indirect
 	golang.org/x/net v0.39.0 // indirect
 	golang.org/x/sync v0.13.0 // indirect
 	golang.org/x/sys v0.32.0 // indirect
