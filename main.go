@@ -31,6 +31,7 @@ func main() {
 	setCandlesticksCommands(rootCmd)
 	setExchangesCommands(rootCmd)
 	setServicesCommands(rootCmd)
+	setIndicatorsCommands(rootCmd)
 	setTicksCommands(rootCmd)
 
 	// Execute command
