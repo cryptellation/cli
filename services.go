@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 
 	"github.com/cryptellation/go-clients/client"
 	"github.com/spf13/cobra"
@@ -35,10 +36,16 @@ var infoCmd = &cobra.Command{
 		case jsonOutput:
 			return displayJSON(res)
 		default:
+			keys := make([]string, 0, len(res))
+			for k := range res {
+				keys = append(keys, k)
+			}
+			sort.Strings(keys)
+
 			format := "%-20s %+v\n"
 			fmt.Printf(format, "NAME", "DATA")
-			for name, data := range res {
-				fmt.Printf(format, name, data)
+			for _, k := range keys {
+				fmt.Printf(format, k, res[k])
 			}
 		}
 
