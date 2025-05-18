@@ -28,8 +28,10 @@ func main() {
 		"json", "j", false, "Set output to JSON format")
 
 	// Set commands
+	setBacktestsCommands(rootCmd)
 	setCandlesticksCommands(rootCmd)
 	setExchangesCommands(rootCmd)
+	setForwardtestsCommands(rootCmd)
 	setServicesCommands(rootCmd)
 	setIndicatorsCommands(rootCmd)
 	setTicksCommands(rootCmd)
