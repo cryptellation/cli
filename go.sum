@@ -7,14 +7,12 @@ github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGX
 github.com/cpuguy83/go-md2man/v2 v2.0.6/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=
 github.com/cryptellation/backtests v1.0.3 h1:6dgOpcQGGtCXShMdr2mjv8DMH9bIUkNKJWZytbQahx8=
 github.com/cryptellation/backtests v1.0.3/go.mod h1:fVv5tDRGi9WnkqD9CdtrQArBZ+7s+T1sl8ks+Vyuuqc=
-github.com/cryptellation/candlesticks v1.0.2 h1:GiDkDkTMob93ryHRdwvViooPaGc0mNqfV4kstJB2NGY=
-github.com/cryptellation/candlesticks v1.0.2/go.mod h1:0R+YZ+PBJsV+jindXAzTKfCU7kq+4VpUfKhWv+028GQ=
+github.com/cryptellation/candlesticks v1.0.4 h1:OSU4OyIH1+iVsIfEBEjf8vdKOleeLqW0agdl7DV9NYo=
+github.com/cryptellation/candlesticks v1.0.4/go.mod h1:0R+YZ+PBJsV+jindXAzTKfCU7kq+4VpUfKhWv+028GQ=
 github.com/cryptellation/exchanges v1.1.0 h1:MFHZU8tDP07RhhbwPWXjn/VLI4+lW522IBvA4VB8noo=
 github.com/cryptellation/exchanges v1.1.0/go.mod h1:2iyJgSid50L76UjS5gzV3hnCeq1DS4u/tkaJuq/toKY=
 github.com/cryptellation/forwardtests v1.0.1 h1:ETbFfd+8hWfS/GOzi+j2lTxf8TYHAQpl5H6XhrNTXik=
 github.com/cryptellation/forwardtests v1.0.1/go.mod h1:z/CjD8x4Xqgjc7ntynIuceCDcIQpShirAmVySYOQORk=
-github.com/cryptellation/go-clients v1.7.0 h1:UFZoSqLiPbHOcX7SA40WbosEsde9KW2KVrp0khzKuv8=
-github.com/cryptellation/go-clients v1.7.0/go.mod h1:xaaMmqDptVdlsikJ/WWAfxQDpECWisR+7rQYOlz07aM=
 github.com/cryptellation/go-clients v1.7.1 h1:/OZqIHBswxuC6HbwtJ/UeDmfzeJdTO0Yr73PM1hShqU=
 github.com/cryptellation/go-clients v1.7.1/go.mod h1:xaaMmqDptVdlsikJ/WWAfxQDpECWisR+7rQYOlz07aM=
 github.com/cryptellation/runtime v1.4.2 h1:nmw6+DCf/OtA5wkr3pqJ0gKjZuIY99Q4aKWZRg4tTkA=
