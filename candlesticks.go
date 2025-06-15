@@ -68,9 +68,11 @@ var candlesticksListCmd = &cobra.Command{
 
 		switch {
 		case jsonOutput:
-			return displayJSON(res.List.ToArray())
+			return displayJSON(res.List)
 		default:
-			fmt.Println(res.List.String())
+			for _, cs := range res.List {
+				fmt.Println(cs.String())
+			}
 		}
 
 		return nil
