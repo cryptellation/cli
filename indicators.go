@@ -85,9 +85,11 @@ var smaListCmd = &cobra.Command{
 
 		switch {
 		case jsonOutput:
-			return displayJSON(res.Data.ToArray())
+			return displayJSON(res.Data)
 		default:
-			fmt.Println(res.Data.String())
+			for _, dp := range res.Data {
+				fmt.Printf("%s: %f\n", dp.Time.Format(time.RFC3339), dp.Value)
+			}
 		}
 
 		return nil
