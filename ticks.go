@@ -5,7 +5,10 @@ import (
 
 	"github.com/cryptellation/go-clients/client"
 	"github.com/cryptellation/ticks/api"
+	"github.com/cryptellation/ticks/pkg/clients"
+	"github.com/google/uuid"
 	"github.com/spf13/cobra"
+	"go.temporal.io/sdk/worker"
 	"go.temporal.io/sdk/workflow"
 )
 
@@ -32,14 +35,31 @@ var ticksListenCmd = &cobra.Command{
 		}
 		defer cl.Close()
 
-		return cl.ListenToTicks(cmd.Context(),
+		// Create a worker
+		id := uuid.New()
+		tq := fmt.Sprintf("CryptellationCLI-%s-TaskQueue", id.String())
+		w := worker.New(cl.GetTemporalClient(), tq, worker.Options{})
+		defer w.Stop()
+
+		if err := cl.ListenToTicks(cmd.Context(),
+			clients.ListenerParams{
+				RequesterID:        id,
+				CallbackNamePrefix: "CryptellationCLI",
+				Callback: func(_ workflow.Context, params api.ListenToTicksCallbackWorkflowParams) error {
+					fmt.Println(params.Tick.String())
+					return nil
+				},
+				Worker:    w,
+				TaskQueue: tq,
+			},
 			ticksListenExchangeFlag,
 			ticksListenPairFlag,
-			func(_ workflow.Context, params api.ListenToTicksCallbackWorkflowParams) error {
-				fmt.Println(params.Tick.String())
-				return nil
-			},
-		)
+		); err != nil {
+			return err
+		}
+
+		// Run the worker
+		return w.Run(nil)
 	},
 }
 
