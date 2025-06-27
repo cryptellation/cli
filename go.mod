@@ -10,6 +10,7 @@ require (
 	github.com/cryptellation/go-clients v1.10.0
 	github.com/cryptellation/sma v1.0.6
 	github.com/cryptellation/ticks v1.2.1
+	github.com/google/uuid v1.6.0
 	github.com/spf13/cobra v1.9.1
 	go.temporal.io/sdk v1.34.0
 )
@@ -22,7 +23,6 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
-	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
