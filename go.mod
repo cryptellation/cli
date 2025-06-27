@@ -3,19 +3,19 @@ module github.com/cryptellation/cli
 go 1.23.8
 
 require (
-	github.com/cryptellation/backtests v1.0.3
+	github.com/cryptellation/backtests v1.1.2
 	github.com/cryptellation/candlesticks v1.0.4
-	github.com/cryptellation/exchanges v1.1.0
-	github.com/cryptellation/forwardtests v1.0.1
-	github.com/cryptellation/go-clients v1.8.0
-	github.com/cryptellation/sma v1.0.5
+	github.com/cryptellation/exchanges v1.1.1
+	github.com/cryptellation/forwardtests v1.1.1
+	github.com/cryptellation/go-clients v1.10.0
+	github.com/cryptellation/sma v1.0.6
 	github.com/cryptellation/ticks v1.2.1
 	github.com/spf13/cobra v1.9.1
 	go.temporal.io/sdk v1.34.0
 )
 
 require (
-	github.com/cryptellation/runtime v1.4.3 // indirect
+	github.com/cryptellation/runtime v1.7.0 // indirect
 	github.com/cryptellation/timeseries v1.1.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
@@ -24,7 +24,7 @@ require (
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.0 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/nexus-rpc/sdk-go v0.4.0 // indirect
