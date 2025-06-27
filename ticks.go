@@ -77,11 +77,16 @@ var ticksListenCmd = &cobra.Command{
 		fmt.Println("\nStopping tick listener...")
 
 		// Stop listening to ticks
-		if err := cl.StopListeningToTicks(cmd.Context(), requesterID, ticksListenExchangeFlag, ticksListenPairFlag); err != nil {
+		if err := cl.StopListeningToTicks(
+			cmd.Context(),
+			requesterID,
+			ticksListenExchangeFlag,
+			ticksListenPairFlag,
+		); err != nil {
 			return fmt.Errorf("failed to stop listening to ticks: %w", err)
 		}
 
-		fmt.Println("Tick listenegit r stopped successfully.")
+		fmt.Println("Tick listener stopped successfully.")
 		return nil
 	},
 }
