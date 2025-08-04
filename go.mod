@@ -8,7 +8,7 @@ require (
 	github.com/cryptellation/exchanges v1.1.1
 	github.com/cryptellation/forwardtests v1.2.0
 	github.com/cryptellation/go-clients v1.10.0
-	github.com/cryptellation/sma v1.0.6
+	github.com/cryptellation/sma v1.1.0
 	github.com/cryptellation/ticks v1.2.1
 	github.com/google/uuid v1.6.0
 	github.com/spf13/cobra v1.9.1
